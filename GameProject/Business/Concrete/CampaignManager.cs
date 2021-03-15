@@ -6,7 +6,7 @@ using System.Text;
 
 namespace GameProject.Business.Concrete
 {
-    public class CampaignManager
+    public class CampaignManager:ICampaignService
     {
       
         public void Add(Campaign campaign)

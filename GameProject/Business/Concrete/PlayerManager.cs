@@ -6,7 +6,7 @@ using System.Text;
 
 namespace GameProject.Business.Concrete
 {
-    public class PlayerManager
+    public class PlayerManager:IPlayerService
     {
         IPlayerCheckService _playerCheckService;
         public PlayerManager(IPlayerCheckService playerCheckService)
@@ -23,6 +23,16 @@ namespace GameProject.Business.Concrete
             {
                 Console.WriteLine("Player validation error. ");
             }
+        }
+
+        public void Delete(Player player)
+        {
+
+        }
+
+        public void Update(Player player)
+        {
+
         }
     }
 }

@@ -1,11 +1,12 @@
-﻿using GameProject.Entities;
+﻿using GameProject.Business.Abstract;
+using GameProject.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace GameProject.Business.Concrete
 {
-    public class GameManager
+    public class GameManager:IGameService
     {
         public void Add(Game game)
         {
